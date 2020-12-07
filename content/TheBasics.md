@@ -1,4 +1,4 @@
-[&leftarrow; Home](README.md)
+[&leftarrow; Home](../README.md)
 
 # Javascript
 

@@ -1,5 +1,5 @@
-# The Javscript Notebook
+# The Javascript Notebook
 
 ## Table of contents
 
-- [The basics](TheBasics.md)
+- [The basics](content/TheBasics.md)
