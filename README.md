@@ -2,4 +2,5 @@
 
 ## Table of contents
 
-- [The basics](content/TheBasics.md)
+- [Intro](content/intro.md)
+- [Functions](content/functions.md)

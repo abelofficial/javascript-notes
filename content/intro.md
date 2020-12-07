@@ -62,7 +62,13 @@ Variables and constants define areas in memory in which values (data) are stored
 | `let $kindOfSpecial` |          `let user-b`          |
 | `let _internalValue` |           `let let`            |
 
-### Data types
+## Data Types In Javascript
+
+Data is stored in two ways in javascript on the heap memory or on the stack memory. A stack is a region in memory, which operates in First-In-Last-Out mode and stores that data in an ordered fashion. The stack is usually used for low-cost data, like numbers, booleans, and strings. Heap on the other hand, is a large region in memory, which can be used to store arbitrary data in an unordered fashion. this makes it much slower. In order to quickly find heap-data when doing operations, a pointer to it is stored on the stack. Because of this there are two types of data types in javascript, primitive data type (immutable) and reference types (mutable).
+
+### Primitive Data Types
+
+The value for a primitive data type is stored in on the stack memory and the variable may be reassigned a new value, but the existing value can not be changed. There are 6 primitive data types: string, number, bigint, boolean, undefined, and symbol. There also is null, which is seemingly primitive.
 
 - **Boolean type** &rightarrow; represents a logical entity and can have two values: `true` and `false`. [read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
@@ -92,6 +98,10 @@ Variables and constants define areas in memory in which values (data) are stored
 
 - **String type** type &rightarrow; is used to represent textual data. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in it. [read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
+### Reference Data Types
+
+Reference data types are assigned a non-primitive value and are given a reference to that value. That reference points to the object’s location in memory. The variables don’t actually contain the value. Objects (functions, arrays...) are reference data types.
+
 - **Object type** type &rightarrow; can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed. Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String or a Symbol value. [read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 ```javascript
@@ -106,3 +116,5 @@ Variables and constants define areas in memory in which values (data) are stored
   person.greet(); // -> Hello from Joe
 }
 ```
+
+[Functions &rightarrow; ](functions.md)
